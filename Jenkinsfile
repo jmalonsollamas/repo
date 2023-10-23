@@ -6,6 +6,7 @@ pipeline {
                 sh "docker build -t jmalonsollamas/pokedex-flask:${env.BUILD_NUMBRE} ."
             }
         }
+    }
 
  /*   stages {
         stage('Build'){
