@@ -1,9 +1,9 @@
-pipeline {
+:pipeline {
     agent any
     stages{
         stage('Build'){
             steps{ 
-                sh "docker build -t jmalonsollamas/pokedex-flask:${env.BUILD_NUMBRE} ."
+                sh "docker build -t jmalonsollamas/repo:${env.BUILD_NUMBRE} ."
             }
         }
     }
